@@ -1064,7 +1064,7 @@ header {
   left: 15px;
   width: 16px;
   height: 15px;
-  border: 2px solid black;
+  border: 2px solid;
   border-radius: 4px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
