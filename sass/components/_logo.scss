@@ -5,14 +5,14 @@
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	margin-right: 93px;
-	&__text-header-dark {
-		color: var(--text-color-title);
-	}
-	&__text-footer-white {
-		color: var(--primary-white-color);
-		display: inline-block;
-		margin-bottom: 20px;
-	}
+}
+.logo__text-header-dark {
+	color: var(--text-color-title);
+}
+.logo__text-footer-white {
+	color: var(--primary-white-color);
+	display: inline-block;
+	margin-bottom: 20px;
 }
 .logo.link-text {
 	color: var(--accent-color);

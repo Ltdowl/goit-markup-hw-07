@@ -10,7 +10,6 @@ header {
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
-
 .navigation {
 	display: flex;
 	justify-content: center;
@@ -22,7 +21,12 @@ header {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
-
+.navigation__list-link {
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
 .header__contacts {
 	display: flex;
 	font-weight: 500;
@@ -35,20 +39,22 @@ header {
 	justify-content: center;
 	align-items: center;
 	color: var(--text-color);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
-
 .header__contacts-icon {
 	margin-right: 10px;
-	fill: var(--text-color);
+	fill: currentColor;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	.header__contacts-item:hover + &,
+	.header__contacts-item:focus + & {
+		fill: var(--accent-color);
+	}
 }
-.header__contacts-item:hover .header__contacts-icon,
-.header__contacts-item:focus .header__contacts-icon {
-	fill: var(--accent-color);
-}
-
 .navigation__list-item,
 .header__contacts-item {
 	margin-right: 50px;
@@ -56,11 +62,4 @@ header {
 .navigation__list-item:last-child,
 .header__contacts-item:last-child {
 	margin-right: 0;
-}
-
-.header__contacts-link:hover,
-.header__contacts-link:focus,
-.navigation__list-link:hover,
-.navigation__list-link:focus {
-	color: var(--accent-color);
 }
