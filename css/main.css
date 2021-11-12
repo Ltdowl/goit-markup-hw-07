@@ -23,7 +23,8 @@
   --border-card: 1px solid #eeeeee;
 }
 
-.visually-hidden {
+.visually-hidden,
+.checkbox-mark {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -530,20 +531,6 @@ address {
   margin-bottom: 30px;
 }
 
-.checkbox-mark {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
 .check-link {
   color: var(--accent-color);
 }
@@ -607,11 +594,11 @@ address {
   outline: 2px solid;
 }
 
-header {
+.header {
   border-bottom: 1px solid var(--color-header-line);
 }
 
-.header {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
